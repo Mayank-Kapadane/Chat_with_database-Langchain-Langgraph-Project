@@ -45,6 +45,18 @@ Combines Scenario 1 and Scenario 2 to leverage both structured SQL querying and 
 
 ---
 
+## Database Connectivity
+
+The project can connect to databases using standard connection URLs, similar to SQLAlchemy connection strings. This makes it easy to switch between different database systems by simply updating the connection URL.
+
+Example:
+
+- `mysql+pymysql://username:password@host:3306/database_name`
+- `postgresql://username:password@host:5432/database_name`
+- `sqlite:///database.db`
+
+---
+
 ## Project Architecture
 
 1. User asks a question in natural language.
